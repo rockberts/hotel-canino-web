@@ -1,52 +1,127 @@
-<body>
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hotel Canino Feliz</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<header>
-  <h1>Hotel Canino Feliz 🐶</h1>
-  <p>Cuidado seguro y familiar para tu perro</p>
+<body>
+
+<header class="site-header">
+  <div class="header-content">
+    <h1>Hotel Canino Feliz</h1>
+    <p>Cuidado familiar, seguro y personalizado para tu perro</p>
+  </div>
+
+  <nav class="main-nav">
+    <a href="#servicios">Servicios</a>
+    <a href="#fotos">Fotos y testimonios</a>
+    <a href="#faq">Preguntas frecuentes</a>
+    <a href="#quienes">Quiénes somos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 </header>
 
-<section>
-  <h2>🐾 Servicios</h2>
-  <ul>
-    <li>Hospedaje en casa (ambiente familiar)</li>
-    <li>Paseos diarios y juegos</li>
-    <li>Atención personalizada</li>
-  </ul>
-</section>
+<main>
 
-<section>
-  <h2>📍 Contacto</h2>
-  <p>
-    WhatsApp: <strong>+XX XXXX XXXX</strong><br>
-    Horario de atención: 9:00 a 18:00
-  </p>
-</section>
+  <section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Hospedaje en casa</h3>
+        <p>Ambiente familiar, sin jaulas, con supervisión constante.</p>
+      </div>
+      <div class="card">
+        <h3>Paseos y juegos</h3>
+        <p>Rutinas diarias adaptadas a la energía y edad del perro.</p>
+      </div>
+      <div class="card">
+        <h3>Atención personalizada</h3>
+        <p>Cupo limitado para asegurar bienestar y seguridad.</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
+  <section id="fotos" class="section section-alt">
+    <h2>Fotos y testimonios</h2>
+    <div class="gallery">
+      <div class="photo">Foto 1</div>
+      <div class="photo">Foto 2</div>
+      <div class="photo">Foto 3</div>
+    </div>
+
+    <div class="testimonials">
+      <blockquote>
+        “Mi perro volvió feliz y tranquilo. Total confianza.”
+        <span>– Cliente</span>
+      </blockquote>
+      <blockquote>
+        “Se nota el cariño y la dedicación.”
+        <span>– Cliente</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <h2>Preguntas frecuentes</h2>
+
+    <details>
+      <summary>¿Qué requisitos debe cumplir mi perro?</summary>
+      <p>Vacunas al día y buen comportamiento con otros perros.</p>
+    </details>
+
+    <details>
+      <summary>¿Pueden enviar fotos o videos?</summary>
+      <p>Sí, enviamos actualizaciones durante la estadía.</p>
+    </details>
+
+    <details>
+      <summary>¿Cuáles son los horarios?</summary>
+      <p>Recepción y retiro de 9:00 a 18:00.</p>
+    </details>
+  </section>
+
+  <section id="quienes" class="section section-alt">
+    <h2>Quiénes somos</h2>
+    <p>
+      Somos un hotel canino atendido en casa, enfocado en el bienestar,
+      la seguridad y el trato cercano. Cuidamos a cada perro como si fuera propio.
+    </p>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>
+      WhatsApp: <strong>+XX XXXX XXXX</strong><br>
+      Horario: 9:00 a 18:00
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
   © 2026 Hotel Canino Feliz
 </footer>
 
 <script src="script.js"></script>
 
-<div id="chatbot-button">💬</div>
+<!-- Chatbot -->
+<div id="chatbot-button">Chat</div>
 
 <div id="chatbot-window">
   <div id="chatbot-header">
-    Hotel Canino Bot 🐶
-    <span id="chatbot-close">✖</span>
+    Asistente Hotel Canino
+    <span id="chatbot-close">X</span>
   </div>
   <div id="chatbot-messages">
     <div class="bot-message">
-      ¡Hola! Soy el asistente del Hotel Canino 😊<br>
-      ¿En qué puedo ayudarte?
+      Hola. Puedo ayudarte con servicios, horarios y requisitos.
     </div>
   </div>
   <input id="chatbot-input" placeholder="Escribe tu pregunta..." />
 </div>
 
 </body>
+</html>
